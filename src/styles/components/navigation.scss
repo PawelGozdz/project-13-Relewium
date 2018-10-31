@@ -1,0 +1,41 @@
+// Bootstrap
+.navbar {
+  padding-left: 0;
+
+  &-brand img {
+    width: 6rem;
+    
+    @include respond(tab-land) {
+      width: 8rem;
+    }
+
+    @include respond(big-laptop) {
+      width: 9.05rem;
+    }
+  }
+}
+// Regular classes
+.navigation {
+  color: $white;
+  // background-color: $primary;
+  background: $primary;
+  .nav {
+
+    &-link {
+      color: $white;
+      font-family: Ubuntu;
+      text-transform: uppercase;
+      font-size: 1.1365rem;
+      font-weight: 500;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: right;
+    }
+  }
+
+  // .container {
+  //   padding-left: 0;
+  // }
+}

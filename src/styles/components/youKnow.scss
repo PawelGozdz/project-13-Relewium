@@ -1,0 +1,34 @@
+.youKnow {
+  background-color: rgba($primary, .1);
+  height: auto;
+  
+  @include respond(laptop) {
+    height: auto;
+  }
+
+  @include respond(big-laptop) {
+    height: 30.1rem;
+  }
+
+  &__text {
+    font-size: $text;
+    line-height: 1.5;
+    color: $primary;
+  }
+
+  .heading__section {
+    color: $primary;
+  }
+
+  .img-fluid {
+    max-height: 13rem;
+    width: auto;
+    
+    @include respond(laptop) {
+      max-height: 15rem;
+    }
+    @include respond(big-laptop) {
+      max-height: 20.75rem;
+    }
+  }
+}

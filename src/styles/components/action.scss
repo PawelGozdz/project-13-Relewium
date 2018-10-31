@@ -1,0 +1,44 @@
+.action {
+  background-color: rgba($primary, .1);
+  height: auto;
+  
+  @include respond(laptop) {
+    height: auto;
+  }
+
+  @include respond(big-laptop) {
+    // height: 30.1rem;
+  }
+
+  &__text {
+    font-size: $text;
+    line-height: 1.5;
+    position: relative;
+    
+    &::before {
+      content: '';
+      height: 3.2rem;
+      width: 3.2rem;
+      position: absolute;
+      top: -2%;
+      left: -1rem;
+      background-color: rgba(#23b3d2, .1);
+    }
+  }
+
+  .heading__section {
+    color: $primary;
+  }
+
+  .img-fluid {
+    max-height: 13rem;
+    width: auto;
+    
+    @include respond(laptop) {
+      max-height: 15rem;
+    }
+    @include respond(big-laptop) {
+      max-height: 20.75rem;
+    }
+  }
+}

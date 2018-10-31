@@ -1,0 +1,12 @@
+.articles {
+  background-image: linear-gradient(rgba(#e1f5fa, .9), rgba(#e1f5fa, .9)), url('../images/block-4-img.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  
+  figcaption {
+    font-size: 1.6rem;
+    color: $primary;
+    vertical-align: middle;
+  }
+}

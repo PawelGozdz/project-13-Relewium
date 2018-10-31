@@ -1,0 +1,57 @@
+.hero {
+  background-color: $primary;
+  
+  @include respond(big-laptop) {
+    // height: 30rem;
+    max-height: 16.4rem;
+  }
+
+  &__text {
+    font-size: $text;
+    line-height: 1.5;
+    color: $white;
+  }
+
+  // Grid changes
+  // Making a dropdown 3nd child after h1 & img in mobile
+  .row div:nth-child(2) {
+    order: -1;
+
+    @include respond(laptop) {
+      order: 0;
+    }
+  }
+
+  .dropdown-toggle {
+    display: inline-block;
+    width: 100%;
+    color: $black;
+    font-size: .9rem;
+
+    &::after {
+      display: inline-block;
+      // width: 5%;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      color: darken($light, 20%);
+    }
+  } 
+
+  .list-group {
+    width: 100%;
+    z-index: 10;
+    
+    @include respond(laptop) {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 14rem;
+      height: 19.8rem;
+    }
+    
+    @include respond(big-laptop) {
+      width: 17rem;
+    }
+  }
+}

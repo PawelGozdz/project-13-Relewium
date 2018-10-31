@@ -1,0 +1,16 @@
+.footer {
+  background-color: $primary;
+  color: $white;
+  font-size: 1.6rem;
+  
+  @include respond(big-laptop) {
+    // height: 30rem;
+    max-height: 16.4rem;
+  }
+
+  button {
+    font-size: 1.1rem;
+
+  }
+
+}

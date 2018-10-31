@@ -1,0 +1,45 @@
+html {
+  //font-size: 62.5%; // 1rem = 10px; 10px/16px = 62.5%s
+  // font-family: 'Open Sans Condensed', sans-serif;
+  font-family: Roboto, sans-serif;
+  
+  @include respond(phone) {
+    font-size: 90%;
+  }
+  
+  @include respond(tab-port) {
+    font-size: 92%; // 1rem = 8px; 8/16 = 50%
+  }
+  @include respond(tab-land) {
+    font-size: 97%; // 1rem = 9px; 9/16 = 56.5%
+  }
+  @include respond(laptop) {
+    font-size: 105%; // 1rem = 10; 10/16 = 62.5%
+  }
+  @include respond(big-laptop) {
+    font-size: 110%; // 1rem = 10; 10/16 = 62.5%
+  }
+}
+
+.heading {
+  padding: 0;
+  text-align: left;
+  font-weight: bold;
+  
+  &__main {
+    font-size: 2.18rem;
+    text-align: left;
+    text-transform: uppercase;
+    color: $white;
+
+  }
+  &__section {
+    font-size: 2.08rem;
+  }
+  
+  &__article {
+    font-size: 1.6rem;
+    letter-spacing: normal;
+    line-height: 1.3;
+  }
+}

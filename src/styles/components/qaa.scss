@@ -1,0 +1,38 @@
+.qaa {
+
+  .heading__article {
+    color: $primary;
+  }
+
+  &__text {
+    font-size: $text;
+    margin-bottom: 0;
+
+    &--item::before {
+      content: '-';
+      margin-right: $sp-1;
+    }
+
+    &--counter::before {
+      counter-increment: section;
+      content: counter(section) ". ";
+    }
+
+    &--small {
+      font-size: .75rem;
+    }
+  }
+
+  fieldset {
+    border: 3px solid $primary;
+  }
+
+  legend {
+    border: none;
+    width: 50%;
+  }
+
+  .card-body {
+    padding: .75rem;
+  }
+}

@@ -1,0 +1,12 @@
+.composition {
+
+  td > * {
+    font-size: $text;
+    max-height: 33.33333%;
+    vertical-align: bottom;
+
+    > span {
+      display: block;
+    }
+  }
+}

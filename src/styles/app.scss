@@ -1,0 +1,24 @@
+// Abstracts
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+
+// Fonts
+// @import "./fonts/fonts.css";
+
+// Components
+@import './components/navigation';
+@import './components/hero';
+@import './components/youKnow';
+@import './components/composition';
+@import './components/action';
+@import './components/qaa';
+@import './components/articles';
+@import './components/footer';
+
+// Pages
+
+
+// Configuration
+// @import './configurations/normalize';
+@import "./configurations/typography.scss";
+@import './configurations/custom';
